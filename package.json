@@ -1,0 +1,14 @@
+{
+  "name": "lets-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+     "build":"node backend/server.js"
+  },
+  "author": "prathmesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
