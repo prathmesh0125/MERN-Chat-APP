@@ -4,6 +4,7 @@ import { Button  } from '@chakra-ui/react'
 import { Routes, Route, Link} from "react-router-dom";
 import Home from './Component/Home';
 import Chat from './Component/Chat';
+// http://127.0.0.1:5000
 
 
 function App() {
@@ -23,7 +24,6 @@ function App() {
         />
 </Routes>
 
-  {/* <Button colorScheme='blue'>Button</Button>  */}
     </div>
   );
 }

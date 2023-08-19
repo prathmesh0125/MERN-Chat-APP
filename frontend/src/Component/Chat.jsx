@@ -6,6 +6,7 @@ const Chat = () => {
 
   const chatsData = async () => {
     const { data } = await axios.get("/api/chats");
+    console.log(data);
     setChat(data);
   };
 
@@ -13,18 +14,18 @@ const Chat = () => {
     chatsData();
   }, []);
 
-  return <div>Dashboard
-
-
-{chat.map((chat)=>(
+  return (
+    <div>
+      Dashboard djfjsdhkjsd
+      {chat.map((chat)=>(
   <div key={chat._id}>
   <p>{chat.chatName}</p>
   <p>{chat._id}</p>
-  {/* <p>{chat.grou}</p> */}
+  <p>{chat.grou}</p>
    </div>
 ))}
-
-  </div>;
+    </div>
+  );
 };
 
 export default Chat;

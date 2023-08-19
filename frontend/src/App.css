@@ -1,0 +1,14 @@
+*{
+    font-family: sans-serif;
+}
+body{
+
+    cursor: url('./cursor.png'),auto ;
+}
+.App{
+     min-height: 100vh;
+     background-image: url('./herobg.png');
+     background-size: cover;
+     background-position: center;
+
+}

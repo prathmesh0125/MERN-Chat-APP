@@ -1,0 +1,119 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  /* background: white; */
+}
+.login {
+  position: relative;
+  width: 400px;
+  padding: 80px 50px 50px;
+  box-shadow: 2px 2px 19px 5px rgba(0, 0, 0, 0.7), -15px -15px 20px 15px white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.login form {
+  position: relative;
+  width: 100%;
+}
+.login form h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  line-height: 0.9em;
+}
+.login form h2 span {
+  font-weight: 300px;
+  font-size: 0.65em;
+}
+.login form .inpuBox {
+  position: relative;
+  display: flex;
+  padding: 5px;
+}
+.login form .inpuBox input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.login form .inpuBox input[type="text"],
+.login form .inpuBox input[type="email"], 
+.login form .inpuBox input[type="Password"] {
+  width: 100%;
+  padding: 15px 20px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px white;
+}
+.login form .inpuBox i{
+    position: absolute;
+    /* left: 20px; */
+    margin-left: 15px;
+    top: 25%;
+}
+.login form label {
+    display: flex;
+    align-items: center;
+}
+.login form  input[type="checkbox"]{
+    margin-right: 5px;
+}
+.login form .inpuBox input[type="submit"]{
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px white;  
+    font-weight: 600;
+}
+.login form .inpuBox input[type="submit"]:hover{
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3), inset -5px -5px 10px white;
+}
+.login .finger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+
+}
+.login .finger  {
+    font-weight:500 ;
+}
+.login .finger .fingerbox {
+ font-size: 35px;
+}
+.login .finger .fingerbox{
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.1),  -5px -5px 10px white;  
+    border: 3px solid white;
+    padding: 15px 20px 10px;
+    border-radius: 10px;
+    background: linear-gradient(315deg,#03a9f4,#0082bc);
+    /* max-width: 40px; */
+    /* filter: invert(1); */
+    animation: animate 3.5s linear infinite;
+}
+@keyframes animate {
+    0%{
+        opacity: 1;
+    }
+50%{
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 410px) {
+.login{
+    margin-top: 27px;
+    width: 251px;
+    padding: 65px 50px 50px;
+}
+}
