@@ -19,9 +19,9 @@ const Chat = () => {
       Dashboard djfjsdhkjsd
       {chat.map((chat)=>(
   <div key={chat._id}>
-  <p>{chat.chatName}</p>
-  <p>{chat._id}</p>
-  <p>{chat.grou}</p>
+  <p style={{color:"white"}} >{chat.chatName}</p>
+  {/* <p>{chat._id}</p> */}
+  {/* <p>{chat.grou}</p> */}
    </div>
 ))}
     </div>
