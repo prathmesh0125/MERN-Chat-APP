@@ -70,11 +70,15 @@
     margin-top: 20px;
     cursor: pointer;
     /* margin-bottom: 20px; */
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px white;  
+    /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px white;   */
+    box-shadow:  inset 5px 5px 20px rgba(0, 0, 0, 0.3), -1px 0px 10px 2px #000000;
     font-weight: 600;
 }
 .login form .inpuBox input[type="submit"]:hover{
-    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3), inset -5px -5px 10px white;
+    /* box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3), inset -5px -5px 10px white; */
+    transition: 0.5s;
+    background-color: hsl(219, 48%, 8%);
+    color: white;
 }
 .login .finger{
     display: flex;
