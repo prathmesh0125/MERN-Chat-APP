@@ -25,6 +25,7 @@
   font-size: 2em;
   margin-bottom: 30px;
   line-height: 0.9em;
+  margin-top: -1.5em;
 }
 .login form h2 span {
   font-weight: 300px;
@@ -64,7 +65,7 @@
 .login form  input[type="checkbox"]{
     margin-right: 5px;
 }
-.login form .inpuBox input[type="submit"]{
+.login form Button{
     width: 100%;
     padding: 15px 20px;
     margin-top: 20px;
@@ -74,10 +75,12 @@
     box-shadow:  inset 5px 5px 20px rgba(0, 0, 0, 0.3), -1px 0px 10px 2px #000000;
     font-weight: 600;
 }
-.login form .inpuBox input[type="submit"]:hover{
+/* .login form .inpuBox input[type="submit"]:hover{ */
+  .login form Button:hover{
     /* box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3), inset -5px -5px 10px white; */
     transition: 0.5s;
     background-color: hsl(219, 48%, 8%);
+    /* background-color: red; */
     color: white;
 }
 .login .finger{
@@ -116,8 +119,8 @@
 
 @media screen and (max-width: 410px) {
 .login{
-    margin-top: 27px;
-    width: 251px;
-    padding: 65px 50px 50px;
+  margin-top: -1px;
+  width: 297px;
+  padding: 36px 34px 25px;
 }
 }

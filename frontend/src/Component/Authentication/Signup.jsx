@@ -44,7 +44,7 @@ function Login() {
       toast({
         title: "Please Fill all the Feilds",
         status: "warning",
-        duration: 5000,
+        duration: 700,
         isClosable: true,
         position: "bottom",
       });
@@ -55,7 +55,7 @@ function Login() {
       toast({
         title: "Passwords Do Not Match",
         status: "warning",
-        duration: 5000,
+        duration: 600,
         isClosable: true,
         position: "bottom",
       });
@@ -82,7 +82,7 @@ function Login() {
       toast({
         title: "Registration Successful",
         status: "success",
-        duration: 5000,
+        duration: 1000,
         isClosable: true,
         position: "bottom",
       });
@@ -94,7 +94,7 @@ function Login() {
         title: "Error Occured!",
         description: error.response.data.message,
         status: "error",
-        duration: 5000,
+        duration: 700,
         isClosable: true,
         position: "bottom",
       });
@@ -107,7 +107,7 @@ function Login() {
       toast({
         title: "please select an image",
         status: "warning",
-        duration: 5000,
+        duration: 600,
         isClosable: true,
         position: "bottom",
       });
@@ -140,7 +140,7 @@ function Login() {
       toast({
         title: "please select an image",
         status: "warning",
-        duration: 5000,
+        duration: 700,
         isClosable: true,
         position: "bottom",
       });
@@ -154,8 +154,8 @@ function Login() {
         <form>
           <h2>
             Hello!
-            <br />
-            <span>Welcome Back!</span>
+            {/* <br /> */}
+            {/* <span>Welcome Back!</span> */}
           </h2>
           <div className="inpuBox">
             <input
@@ -249,7 +249,7 @@ function Login() {
             />
           </FormControl>
           <Button
-            colorScheme="blue"
+            // colorScheme="blue"
             width="100%"
             style={{ marginTop: 15 }}
             onClick={submitHandler}

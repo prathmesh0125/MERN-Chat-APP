@@ -7,8 +7,14 @@ body{
 }
 .App{
      min-height: 100vh;
-     background-image: url('./herobg.png');
+     /* background-image: url('./herobg.png'); */
      background-size: cover;
      background-position: center;
 
+}
+body::-webkit-scrollbar{
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(21, 15, 60),rgb(9, 103, 118),rgb(62, 11, 55));
 }

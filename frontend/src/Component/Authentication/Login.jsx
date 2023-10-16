@@ -26,10 +26,10 @@ function Login() {
       setloading(true);
       if (!email || !password) {
         toast({
-          title: "Please Fill all the Feilds",
+          title: "Please Fill all the Fields",
           status: "warning",
-          duration: 5000,
-          isClosable: true,
+          duration: 700,
+          isClosable: false,
           position: "bottom",
         });
         setloading(false);
@@ -143,7 +143,8 @@ function Login() {
         }}  value="As a Guest" />
     </div> */}
     <Button
-        colorScheme="blue"
+     
+        // colorScheme="blue"
         width="100%"
         style={{ marginTop: 15 }}
         onClick={submitHandler}
@@ -152,9 +153,9 @@ function Login() {
         Login
       </Button>
       <Button
-        variant="solid"
+        // variant="solid"
         colorScheme="red"
-        width="100%"
+        // width="100%"
         style={{ marginTop: 15 }}
 
         onClick={() => {
@@ -162,7 +163,7 @@ function Login() {
           setPassword("123456");
         }}
       >
-        Get Guest User Credentials
+        As Guest
       </Button>
 </form>
 {/* <h4>Or</h4> */}
